@@ -10,8 +10,7 @@ $(document).ready(function(){
     headerNavbarToggler = $("#headerNavbarToggler");
 
     
-    //#endregion DOM
-    
+    //#endregion DOM  
     
     //#region variables
     
@@ -32,16 +31,14 @@ $(document).ready(function(){
         else{
             navbarHeader.toggleClass("collapse");
             navbarHeader.toggleClass("collapsing");
+
             navbarHeader.animate({height: "245px"},400,function(){
                 navbarHeader.toggleClass("collapsing");
                 navbarHeader.toggleClass("collapse");
                 navbarHeader.toggleClass("show");
                 navbarHeader.css("height", "");
             });
-
-        }
-        
-            
+        }     
     })
 
     
